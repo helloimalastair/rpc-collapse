@@ -14,7 +14,12 @@ export class DO extends DurableObject {
 			foo: "bar"
 		};
 	}
-	bazBum(): BazBum | undefined {
+	bazBumOptional(): BazBum | undefined {
+		return {
+			baz: "bum"
+		};
+	}
+	bazBum(): BazBum {
 		return {
 			baz: "bum"
 		};
